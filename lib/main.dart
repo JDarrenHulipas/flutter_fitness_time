@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'package:flutter_fitness_time/widget/bottomnavigationbar.dart';
+
+
+
 void main() {
   runApp(const MainApp());
+  void main() => runApp(const NavigationBarApp());
 }
 
 class MainApp extends StatelessWidget {
@@ -15,7 +20,7 @@ class MainApp extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Color(0xFFF896D8),
           titleTextStyle: GoogleFonts.montserrat(),
-          title: const Text('Fitness Time'),
+          title: Text('Fitness Time',style: TextStyle(color: Colors.white),),
           actions: <Widget>[
             IconButton(
               //Foto de perfil (Añadir CircleAvatar, NetworkImage)
@@ -34,7 +39,9 @@ class MainApp extends StatelessWidget {
            * Card  + CardPercentIndicator -> percent_indicator 
            */
           child: Text('Hello World!'),
+          
         ),
+        
       ),
     );
   }
